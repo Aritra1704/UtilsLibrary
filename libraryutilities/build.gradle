@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'UtilitiesLibrary '
+
+    publishedGroupId = 'com.arpaul.libraryutilities'
+    libraryName = 'Utilities Library '
+    artifact = 'UtilitiesLibrary '
+
+    libraryDescription = 'Various utilities like Calendar date format, Data type conversion, Bitmap conversions.'
+
+    siteUrl = 'https://github.com/Aritra1704/UtilsLibrary'
+    gitUrl = 'https://github.com/Aritra1704/UtilsLibrary.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'aritra1704'
+    developerName = 'Aritra'
+    developerEmail = 'aritra1704@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
