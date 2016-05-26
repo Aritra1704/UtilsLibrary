@@ -30,15 +30,15 @@ public class CalendarUtils {
             String date = dateTime.split("T")[0];
             String str[] = date.split("-");
 
-            calendar.set(Calendar.DAY_OF_MONTH,StringUtils.getInt(str[0]));
-            calendar.set(Calendar.MONTH,StringUtils.getInt(str[1]) - 1);
-            calendar.set(Calendar.YEAR,StringUtils.getInt(str[2]));
+            calendar.set(Calendar.DAY_OF_MONTH, StringUtils.getInt(str[0]));
+            calendar.set(Calendar.MONTH, StringUtils.getInt(str[1]) - 1);
+            calendar.set(Calendar.YEAR, StringUtils.getInt(str[2]));
 
             String time = dateTime.split("T")[1];
             String strTime[] = time.split(":");
-            calendar.set(Calendar.HOUR_OF_DAY,StringUtils.getInt(strTime[0]));
-            calendar.set(Calendar.MINUTE,StringUtils.getInt(strTime[1]));
-            calendar.set(Calendar.SECOND,StringUtils.getInt(strTime[2]));
+            calendar.set(Calendar.HOUR_OF_DAY, StringUtils.getInt(strTime[0]));
+            calendar.set(Calendar.MINUTE, StringUtils.getInt(strTime[1]));
+            calendar.set(Calendar.SECOND, StringUtils.getInt(strTime[2]));
         }
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATETIME_FORMAT_WITH_COMMA);
@@ -56,9 +56,9 @@ public class CalendarUtils {
             String date = dateTime.split("T")[0];
             String str[] = date.split("-");
 
-            calendar.set(Calendar.DAY_OF_MONTH,StringUtils.getInt(str[0]));
-            calendar.set(Calendar.MONTH,StringUtils.getInt(str[1]) - 1);
-            calendar.set(Calendar.YEAR,StringUtils.getInt(str[2]));
+            calendar.set(Calendar.DAY_OF_MONTH, StringUtils.getInt(str[0]));
+            calendar.set(Calendar.MONTH, StringUtils.getInt(str[1]) - 1);
+            calendar.set(Calendar.YEAR, StringUtils.getInt(str[2]));
         }
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_FORMAT_WITH_COMMA);
@@ -76,9 +76,9 @@ public class CalendarUtils {
             String date = dateTime.split("T")[0];
             String str[] = date.split("-");
 
-            calendar.set(Calendar.DAY_OF_MONTH,StringUtils.getInt(str[2]));
-            calendar.set(Calendar.MONTH,StringUtils.getInt(str[1]) - 1);
-            calendar.set(Calendar.YEAR,StringUtils.getInt(str[0]));
+            calendar.set(Calendar.DAY_OF_MONTH, StringUtils.getInt(str[2]));
+            calendar.set(Calendar.MONTH, StringUtils.getInt(str[1]) - 1);
+            calendar.set(Calendar.YEAR, StringUtils.getInt(str[0]));
         }
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_FORMAT1);
@@ -95,9 +95,9 @@ public class CalendarUtils {
             String date = dateTime.split("T")[0];
             String str[] = date.split("-");
 
-            calendar.set(Calendar.DAY_OF_MONTH,StringUtils.getInt(str[2]));
-            calendar.set(Calendar.MONTH,StringUtils.getInt(str[1]) - 1);
-            calendar.set(Calendar.YEAR,StringUtils.getInt(str[0]));
+            calendar.set(Calendar.DAY_OF_MONTH, StringUtils.getInt(str[2]));
+            calendar.set(Calendar.MONTH, StringUtils.getInt(str[1]) - 1);
+            calendar.set(Calendar.YEAR, StringUtils.getInt(str[0]));
         }
         return calendar;
     }
@@ -310,9 +310,9 @@ public class CalendarUtils {
             String date = dateTime.split("T")[0];
             String str[] = date.split("-");
 
-            calendar.set(Calendar.DAY_OF_MONTH,StringUtils.getInt(str[0]));
-            calendar.set(Calendar.MONTH,StringUtils.getInt(str[1]) - 1);
-            calendar.set(Calendar.YEAR,StringUtils.getInt(str[2]));
+            calendar.set(Calendar.DAY_OF_MONTH, StringUtils.getInt(str[0]));
+            calendar.set(Calendar.MONTH, StringUtils.getInt(str[1]) - 1);
+            calendar.set(Calendar.YEAR, StringUtils.getInt(str[2]));
         }
         return calendar;
     }

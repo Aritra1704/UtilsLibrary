@@ -2,6 +2,7 @@ package com.arpaul.libraryutilities;
 
 import android.text.TextUtils;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -30,6 +31,17 @@ public class StringUtils {
         return reqInteger;
     }
 
+    public static float getFloat(String integer) {
+        float reqInteger = 0;
+
+        if(integer == null || TextUtils.isEmpty(integer))
+            return reqInteger;
+
+        reqInteger = Float.parseFloat(integer);
+
+        return reqInteger;
+    }
+
     public static String getStringFormattedArray(ArrayList<String> arrString) {
         String eventDate = "";
 
@@ -53,5 +65,16 @@ public class StringUtils {
         finalStr = inputString;
 
         return finalStr;
+    }
+
+    public static float getMeterToMile(int meter){
+        float mile = 0;
+
+        mile = (float)((float) meter / 1609.34);
+
+        DecimalFormat form = new DecimalFormat("0.00");
+        mile = getFloat(form.format(mile));
+
+        return mile;
     }
 }

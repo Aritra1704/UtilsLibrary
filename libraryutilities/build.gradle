@@ -1,19 +1,24 @@
 apply plugin: 'com.android.library'
 
+
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'UtilitiesLibrary '
+    bintrayName = 'UtilitiesLibrary'
+
+    PUBLISH_GROUP_ID = 'com.arpaul.libraryutilities'
+    PUBLISH_ARTIFACT_ID = 'UtilitiesLibrary'
 
     publishedGroupId = 'com.arpaul.libraryutilities'
-    libraryName = 'Utilities Library '
-    artifact = 'UtilitiesLibrary '
+    libraryName = 'UtilitiesLibrary'
+    artifact = 'UtilitiesLibrary'
 
     libraryDescription = 'Various utilities like Calendar date format, Data type conversion, Bitmap conversions.'
 
     siteUrl = 'https://github.com/Aritra1704/UtilsLibrary'
     gitUrl = 'https://github.com/Aritra1704/UtilsLibrary.git'
 
-    libraryVersion = '0.0.1'
+    PUBLISH_VERSION = '0.0.4'
+    libraryVersion = '0.0.4'
 
     developerId = 'aritra1704'
     developerName = 'Aritra'
@@ -47,3 +52,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
